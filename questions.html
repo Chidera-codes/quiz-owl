@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="questions.css">
+  <title>QUIZ OWL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <div class="questions-container">
+      <span class="question" id="questionBox"></span>
+    </div>
+    <div class="options-container">
+      <div class="option">
+        <p class="prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="option">
+        <p class="prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="option">
+        <p class="prefix">C</p>
+        <p class="choice-text" data-number="3"></p>
+      </div>
+      <div class="option">
+        <p class="prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
+    </div>
+    <div class="heads-up-container">
+      <div class="progress-bar-container">
+        <p class="question-text">Question <span id="question-counter-text">1/10</span></p>
+      <div class="progress-b">
+        <div class="progress-bar" id="hud-progress-bar"></div>
+      </div>
+      </div>
+        <div class="score">
+          <p class="score-text"> Score :<span class="score-number" id="hud-score">0</span></p>
+        </div>
+  </div> 
+</body>
+<script type="text/javascript" src="questions.js"></script>
+</html>
