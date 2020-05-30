@@ -186,6 +186,7 @@ getNewQuestion = () =>{
   if(questionCounter >= Max_questions){
     localStorage.setItem('user_score' , score);
     return window.location.assign("questions.html");
+ 
   }
   questionCounter++;
   questionCounterText.innerText = questionCounter + "/" + Max_questions ;
