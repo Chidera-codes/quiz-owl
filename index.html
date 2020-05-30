@@ -30,10 +30,10 @@
 <script>
   const button = document.getElementById('button-gs');
   const username = document.getElementById('username');
+  const error = document.getElementById('error-message');
   button.addEventListener('click',(e) => {
     e.preventDefault();
     if(username.value.trim() == ''){
-      const error = document.getElementById('error-message');
       error.style.display = 'block';
       return;
 
