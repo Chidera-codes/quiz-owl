@@ -68,6 +68,13 @@ h1{
 
 }
 
+#error-message{
+  color: red;
+  display: block;
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:1199px) {
@@ -185,6 +192,8 @@ form {
   margin-top: 20px;
   width: 50%;
 }
+
+
 
 }
 /* landscape for mobile devices */

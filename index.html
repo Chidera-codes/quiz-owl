@@ -19,8 +19,9 @@
     <div class="grid-container">
       <img class="owl-logo" src="images/book.png">
     <h1>Welcome to quiz owl</h1>
-    <form action="questions.html">
-      <input type="text" placeholder="Please enter your name" id="username" required>
+    <form>
+      <input type="text" placeholder="Please enter your name" id="username">
+      <small class="error" id="error-message">Uername cannot be left blank</small>
       <button id="button-gs" class=" btn-gt" >Get started</button>
     </form>
   </div>
@@ -29,8 +30,20 @@
 <script>
   const button = document.getElementById('button-gs');
   const username = document.getElementById('username');
-  button.addEventListener('click',() => {
+  button.addEventListener('click',(e) => {
+    e.preventDefault();
+    if(username.value.trim() == ''){
+      const error = document.getElementById('error-message');
+      error.style.display = 'block';
+      return;
+
+    }
+    else{
+    window.location.assign("/questions.html");
     localStorage.setItem('username', username.value);
+    
+    }
+    
   });
   
 
