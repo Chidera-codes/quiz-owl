@@ -84,7 +84,6 @@ h1{
   body{
     background-image: linear-gradient( rgba(0, 0, 255, 0.014) ,rgba(255, 0, 140, 0.267));
     background-size: cover;
-    /* background-repeat: no-repeat; */
     height: 100vh;
   }
   body{
