@@ -185,7 +185,7 @@ startGame = () => {
 getNewQuestion = () =>{
   if(questionCounter >= Max_questions){
     localStorage.setItem('user_score' , score);
-    return window.location.assign("quiz-owl/questions.html");
+    return window.location.assign("/quiz-owl/end.html");
   }
   questionCounter++;
   questionCounterText.innerText = questionCounter + "/" + Max_questions ;
