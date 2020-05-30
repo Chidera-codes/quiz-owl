@@ -13,12 +13,12 @@ diplay_text();
 
 pa_btn.addEventListener('click', (e)=>{
   e.preventDefault;
-  window.location.assign("/questions.html");
+  window.location.assign("quiz-owl/questions.html");
 });
 
 home_btn.addEventListener('click', (e)=>{
   e.preventDefault;
-  window.location.assign("/index.html");
+  window.location.assign("quiz-owl/index.html");
 });
 
 score_text.innerHTML = user_score ;
